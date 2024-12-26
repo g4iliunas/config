@@ -7,7 +7,9 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-export PS1=$'%B%n@%m:\e[0;36m%~\e[0m$ '
+zstyle ':completion:*' list-colors “${(s.:.)LS_COLORS}”
+
+export PS1='%B%n@%m:%F{cyan}%~%f$ %b'
 export EDITOR='vim'
 
 # Enable color support of ls and also add handy aliases (yanked from .bashrc)
