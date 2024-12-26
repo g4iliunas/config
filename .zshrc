@@ -2,12 +2,12 @@
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename "$HOME/.zshrc"
+zstyle ':completion:*' list-colors “${(s.:.)LS_COLORS}”
 
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-zstyle ':completion:*' list-colors “${(s.:.)LS_COLORS}”
 
 export PS1='%B%n@%m:%F{cyan}%~%f$ %b'
 export EDITOR='vim'
